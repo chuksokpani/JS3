@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Task 3</h1>
+    
+</body>
+<script>
+function myNumber(number){
+    let numberArray = [];
+for (let i = 1; i <= number; i++){
+    if ((i%2 === 0) && (i%3 !== 0) && (i%5 !== 0)) {
+        numberArray[i] ="yu";
+    }
+    else if ((i%2 !== 0) && (i%3 === 0) && (i%5 !== 0)){
+        numberArray[i] = "gi";
+    }
+    else if ((i%2 !== 0) && (i%3 !== 0) && (i%5 === 0)){
+        numberArray[i] = "oh";
+    }
+    else if ((i%2 === 0) && (i%3 === 0) && (i%5 !== 0)){
+        numberArray[i] = "yu-gi";
+    }
+    else if ((i%2 === 0) && (i%3 !== 0) && (i%5 === 0)){
+        numberArray[i] = "yu-oh";
+    }
+    else if ((i%2 !== 0) && (i%3 === 0) && (i%5 === 0)){
+        numberArray[i] = "gi-oh";
+    }
+    else if ((i%2 === 0) && (i%3 === 0) && (i%5 === 0)){
+        numberArray[i] = "yu-gi-oh";
+    }
+    else{
+        numberArray[i] = i;
+    }
+numberArray[i];
+
+}
+console.log(numberArray);
+return numberArray;
+
+}
+
+myNumber(100);
+myNumber(351);
+
+
+
+
+</script>
+</html>
